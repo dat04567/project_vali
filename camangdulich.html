@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Cẩm nang du lịch</title>
+   <link rel="shortcut icon" href="./assets/images/logo_tach_nen.png" type="image/x-icon" />
+   <link rel="stylesheet" href="./assets/dist/css/mdb.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+   <link rel="stylesheet" href="./assets/css/navbar.css">
+   <link rel="stylesheet" href="./assets/css/reload.css">
+   <link rel="stylesheet" href="./assets/css/camnang.css">
+
+
+</head>
+
+<body>
+   <div id="repload">
+   </div>
+   <div id="navbar"></div>
+   <div class="container">
+      <h1 class="d-flex justify-content-center">Địa điểm nổi tiếng</h1>
+      <div id="destination-list">
+        
+      </div>
+   </div>
+   <div id="footer"></div>
+
+
+   <script type="module">
+      import exportNav from './assets//components/nav.js';
+      const body = document.querySelector("#navbar").innerHTML = exportNav();
+      import reLoad from './assets/components/preloader.js';
+      document.getElementById('repload').innerHTML = reLoad();
+      import footer from './assets/components/footer.js'
+      document.getElementById('footer').innerHTML = footer();
+      const qual = localStorage.getItem("quality");
+      if (qual != null) {
+         $(document).ready(function () {
+            $('.red_circle').text(qual)
+         });
+      }
+   </script>
+   <script type="module" src="./assets/components/camnangdulich.js"></script>
+   <script type="module">
+      const home = document.getElementById('img-home');
+      home.src = './assets/images/grey_home.png';
+   </script>
+   <script src="./assets/scripts/signIn.js"></script>
+   <script src="./assets/dist/js/mdb.min.js"></script>
+   <script src="./assets/js/jquery-3.6.3.js"></script>
+   <script type="module" src="./assets/scripts/navbar.js"></script>
+   <script type="module" src="./assets/scripts/reload.js"></script>
+</body>
+
+</html>
