@@ -1,0 +1,116 @@
+.title {
+    margin-bottom: 8px;
+    padding-left: 16px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    color: rgb(39, 39, 42);
+}
+
+.outstand {
+    position: relative;
+    display: flex;
+    top: 12px;
+    padding: 12px 8px;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    width: 230px;
+    max-height: 100vh;
+}
+
+.outstand-item:hover {
+    background: rgba(39, 39, 42, 0.12);
+    opacity: 0.95;
+}
+
+.outstand-item {
+    display: flex;
+    padding: 7px 16px;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: rgb(56, 56, 61);
+}
+
+.menu {
+    margin-top: 32px;
+}
+
+main {
+    background: #eeeeee;
+}
+
+.carousel {
+    /* width: 70%; */
+    height: 25rem;
+    margin-top: 3.4rem;
+    margin-left: 2rem;
+
+}
+
+.carousel .carousel-inner .carousel-item img {
+    border-radius: 8px;
+}
+
+.sale {
+    border-radius: 38px;
+    width: 29%;
+    height: 23.9rem;
+    margin-top: 3.4rem;
+}
+
+.header-today {
+    color: rgb(39, 39, 42);
+    display: flex;
+    padding: 12px 16px;
+    background-color: white;
+    flex: 1 1 0%;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: unset;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    border-radius: 8px 8px 0px 0px;
+    margin-left: 1.9rem;
+    /* width: 100%; */
+}
+
+.products
+{
+    display: grid;
+    grid-template-columns: repeat(4,22.8%);
+    grid-template-rows: repeat(10,auto);
+    gap: 2%;
+    margin-left: 1.9rem;
+}
+
+.product-item p 
+{
+    font-size: 15px;
+    width: 100%;
+}
+
+.products .product-item
+{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+.products .product-item .img-product
+{
+    width: 100%;
+}
+.logo img
+{
+    width: 15%;
+}
+.product-item
+{
+    height: 100%;
+}

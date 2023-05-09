@@ -1,0 +1,76 @@
+[
+      {
+         "id" : "vali_01",
+         "name": "Vali Valinice Sebas ID2037_20 S Yellow",
+         "description": "Chất liệu nhựa 100% PC (100% Polycacbonate không hợp chất) chịu va đập và sức ép tốt chống bể vỡ tối ưu, hạn chế trầy xước giúp vali luôn sáng bóng như mới",
+         "price": "999.000₫",
+         "imgURL": "https://media.mia.vn/uploads/vali-heys-earth-tone-24-m-umber-13818-01675666692_270.jpg",
+         "whislist": "5",
+         "sale":"1.815.000₫ -45%"
+      },
+      {
+         "id" : "vali_02",
+         "name": "Balo Reeyee RY101BG 15.6 M Black/Grey",
+         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+         "price": "3.390.000₫",
+         "imgURL": "https://media.mia.vn/uploads/balo-herschel-retreat-standard-15-backpack-m-raven-crosshatchblack-13861-21675154246_270.jpg",
+         "whislist": "4",
+         "sale":"4.520.000₫ -25%"
+      },
+      {
+         "id" : "vali_03",
+         "name": "Vali Heys Fernando FVT - Canada_24 M",
+         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+         "price": "4.499.000₫",
+         "imgURL": "https://media.mia.vn/uploads/vali-pisani-uri-br10-20-s-rose-gold-13277-01656667772_270.jpg",
+         "whislist": "2",
+         "sale":"1.499.667₫"
+      },
+      {
+         "id" : "vali_04",
+         "name": "Herschel Novel Duffle Standard M Navy",
+         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+         "price": "2.590.000₫",
+         "imgURL": "https://media.mia.vn/uploads/vali-heys-fernando-fvt-canada-24-m-white-13800-01675668241_270.jpg",
+         "whislist": "3",
+         "sale":"3.399.000₫ -24%"
+      },
+      {
+         "id" : "vali_05",
+         "name": "Vali Larita Lina OC22004_20 S Pink",
+         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+         "price": "1.399.000₫",
+         "imgURL": "https://media.mia.vn/uploads/vali-larita-cetus-hf8022-20-s-pink-13427-01660532496_270.jpg",
+         "whislist": "3",
+         "sale":"2.250.000₫ -38%"
+      },
+      {
+         "id" : "vali_06",
+         "name": "Vali Combo 2 VALI Pisani Lani Size S + M Baby Pink",
+         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+         "price": "2.998.000₫",
+         "imgURL": "https://media.mia.vn/uploads/vali-larita-olix-tr29-20-s-pink-12122-61611280907_270.jpg",
+         "whislist": "3",
+         "sale":"4.460.000₫ -33%"
+      },
+      {
+         "id" : "vali_07",
+         "name": "Vali Combo 2 VALI Pisani Lani Size S + M Baby Pink",
+         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+         "price": "1.399.000₫",
+         "imgURL": "https://media.mia.vn/uploads/vali-larita-carina-hf8024-20-s-blue-13335-01659948902_270.jpg",
+         "whislist": "3",
+         "sale":"2.150.000₫ -35%"
+      },
+      {
+         "id" : "vali_08",
+         "name": "Vali Epoch 9027_19 S Brown",
+         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+         "price": "2.520.000₫ ",
+         "imgURL": "https://media.mia.vn/uploads/vali-epoch-9027-19-s-brown-13658-01669689559_270.jpg",
+         "whislist": "3",
+         "sale":"4.320.000₫ -42%"
+      }
+]
+
+

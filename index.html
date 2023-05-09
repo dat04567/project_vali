@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MDShop</title>
+  <link rel="shortcut icon" href="./assets/images/logo_tach_nen.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./assets/dist/css/mdb.min.css">
+  <link rel="stylesheet" href="./assets/css/navbar.css">
+  <link rel="stylesheet" href="./assets/css/reload.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+  <!--====== PRELOADER PART START ======-->
+  <div id="repload">
+  </div>
+  <div id="navbar"></div>
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="menu col-2">
+          <div class="outstand">
+            <div class="title">Nổi bật</div>
+            <a href="" class="text-reset outstand-item" title="">
+              <img src="./assets/images/giare.png" width="32" height="32" alt="">
+              <span class="ms-2">Giá rẻ mỗi ngày</span>
+            </a>
+            <a href="" class="text-reset outstand-item" title="Mã giảm giá">
+              <img src="./assets/images/uudai.webp" width="32" height="32" alt="">
+              <span class="ms-2"> Mã giảm giá</span>
+            </a>
+            <a href="" class="text-reset outstand-item" title="Ưu đãi thẻ, ví">
+              <img src="./assets/images/vithe.webp" width="32" height="32" alt="">
+              <span class="ms-2"> Ưu đãi thẻ, ví</span>
+            </a>
+          </div>
+
+          <div class="outstand mt-4 pb-3">
+            <div class="title">Danh mục</div>
+            <a href="" class="text-reset outstand-item" title="">
+              <img src="./assets/images/camnang.webp" width="32" height="32" alt="">
+              <span class="ms-2">Cẩm nang du lịch</span>
+            </a>
+            <a href="" class="text-reset outstand-item" title="Mã giảm giá">
+              <img src="./assets/images/tintuc.webp" width="32" height="32" alt="">
+              <span class="ms-2"> Tin tức</span>
+            </a>
+            <a href="" class="text-reset outstand-item" title="Ưu đãi thẻ, ví">
+              <img src="./assets/images/balo.webp" width="32" height="32" alt="">
+              <span class="ms-2"> Balo</span>
+            </a>
+            <a href="" class="text-reset outstand-item" title="Ưu đãi thẻ, ví">
+              <img src="./assets/images/phukien.webp" width="32" height="32" alt="">
+              <span class="ms-2"> Phụ kiện</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-10 row">
+          <div id="carouselExampleIndicators" class="carousel slide col-8" data-mdb-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-mdb-target="#carouselExampleIndicators" data-mdb-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-mdb-target="#carouselExampleIndicators" data-mdb-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-mdb-target="#carouselExampleIndicators" data-mdb-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp" class="d-block w-100"
+                  alt="Wild Landscape" />
+              </div>
+              <div class="carousel-item">
+                <img src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp" class="d-block w-100" alt="Camera" />
+              </div>
+              <div class="carousel-item">
+                <img src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp" class="d-block w-100" alt="Exotic Fruits" />
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleIndicators"
+              data-mdb-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleIndicators"
+              data-mdb-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+          <img src="https://media.mia.vn/uploads/flask-sale-05-05-1682581022.jpg" class="sale">
+          <div class="today mb-5">
+            <h1 class="header-today" id = "suggest">Gợi ý hôm nay</h1>
+            <section class="products mt-5" id = "products">
+              
+        
+                
+            </section>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  </main>
+
+
+
+  </div>
+
+  <div id="footer"></div>
+  <script type="module">
+    import exportNav from './assets//components/nav.js';
+    import reLoad from './assets/components/preloader.js';
+    document.querySelector("#navbar").innerHTML = exportNav();
+    document.getElementById('repload').innerHTML = reLoad();
+    import footer from './assets/components/footer.js'
+    document.getElementById('footer').innerHTML = footer();
+    const qual = localStorage.getItem("quality");
+    if (qual != null)
+    {
+        $(document).ready(function(){
+          $('.red_circle').text(qual)
+        });
+    }
+ 
+   
+  </script>
+  <script type="module" src="./assets/components/productList.js"></script>
+  <script type="module" src="./assets/scripts/reload.js"></script>
+  <script src="./assets/dist/js/mdb.min.js"></script>
+  <script src="./assets/js/jquery-3.6.3.js"></script>
+  <script type="module" src="./assets/scripts/navbar.js"></script>
+
+</body>
+
+</html>

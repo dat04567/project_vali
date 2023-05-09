@@ -1,0 +1,38 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.text-sign-in,
+.icon-person {
+    color: rgb(10, 104, 255);
+}
+
+.sign-in:hover {
+    background-color: rgba(10, 104, 255, 0.219);
+}
+
+.home span {
+    color: #808089;
+}
+
+.home:hover {
+    background-color: rgba(39, 39, 42, 0.12);
+}
+
+
+#bgi {
+    background: center/cover no-repeat url("../images/creatacc.jpg");
+}
+
+.gradient-custom-3 {
+    background: #84fab0;
+    background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5))
+}
+
+
+.form-outline
+{
+	margin-bottom: 2rem; 
+}
