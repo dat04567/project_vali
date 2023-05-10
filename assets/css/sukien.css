@@ -1,0 +1,200 @@
+.item-image
+{
+   width: 320px;
+
+}
+main
+{
+   width: 75rem;
+}
+#events-list
+{
+   width: 75rem;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+.item-image a img
+{
+   padding: 0 10px;
+}
+.item-content
+{
+   width: calc(100% - 390px);
+}
+.item-content a
+{
+   color: #000;
+   overflow: hidden;
+   text-decoration: none;
+   font-weight: 700;
+   transition: color 0.2s linear;
+}
+.item
+{
+   padding: 20px 0;
+   width: 100%;
+}
+.item:hover .item-content a h2,
+.item:hover .item-content a .item-content-summary
+{
+   color: #232323;
+}
+.item:hover {
+   background-color: #ededed;
+}
+
+
+.item-content-summary,
+.item-content-title
+{
+   transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+   color: #97aab4;
+   font-size: 14px;
+   line-height: 1.5;
+   font-weight: 400;
+}
+
+
+@keyframes activeDot {
+   0%, 100% {
+     transform: scaleY(1);
+   }
+   25% {
+     transform: scaleY(0.75);
+   }
+ }
+ @keyframes inactiveDot {
+   0%, 100% {
+     transform: scaleX(1) scaleY(1);
+   }
+   25% {
+     transform: scaleX(0.85) scaleY(1.25);
+   }
+ }
+ @keyframes chevronEnterFirst {
+   0% {
+     opacity: 0;
+     transform: rotate(0);
+   }
+   100% {
+     transform: rotate(45deg);
+   }
+ }
+ @keyframes chevronEnterSecond {
+   0% {
+     opacity: 0;
+     transform: rotate(0);
+   }
+   100% {
+     transform: rotate(-45deg);
+   }
+ }
+ .wrapper {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 16px;
+ }
+ .wrapper .pagination {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 16px;
+ }
+ .wrapper .pagination:hover button {
+   display: block;
+ }
+ .wrapper .pagination ul {
+   display: flex;
+   padding: 0;
+   gap: 0.1rem;
+   list-style: none;
+ }
+ .wrapper .pagination ul li {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 1rem;
+   width: 1rem;
+   cursor: pointer;
+   transition: width 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+ }
+ .wrapper .pagination ul li::before {
+   content: "";
+   display: block;
+   height: 0.5rem;
+   width: 0.5rem;
+   border-radius: 0.25rem;
+   background: #fff;
+   transform-origin: 50% 50%;
+   transition: width 0.6s cubic-bezier(0.23, 1, 0.32, 1), transform 0.2s ease-out, opacity 0.2s ease-out;
+   opacity: 0.2;
+ }
+ .wrapper .pagination ul li[active] {
+   width: 2rem;
+ }
+ .wrapper .pagination ul li[active]::before {
+   width: 1.25rem;
+   animation: activeDot 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+   opacity: 1;
+ }
+ .wrapper .pagination ul li:not([active])::before {
+   animation: inactiveDot 0.6s ease backwards;
+ }
+ .wrapper .pagination ul li:not([active]):hover::before {
+   opacity: 0.75;
+ }
+ .wrapper .pagination button {
+   display: none;
+   position: relative;
+   height: 24px;
+   width: 24px;
+   padding: 0;
+   border: none;
+   background: transparent;
+   appearance: none;
+   cursor: pointer;
+   transition: opacity 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+   opacity: 0.2;
+ }
+ .wrapper .pagination button:hover {
+   opacity: 1;
+ }
+ .wrapper .pagination button:active {
+   opacity: 0.8;
+ }
+ .wrapper .pagination button:active::before {
+   transform: rotate(35deg) scale(0.85);
+ }
+ .wrapper .pagination button:active::after {
+   transform: rotate(-35deg) scale(0.85);
+ }
+ .wrapper .pagination button::before, .wrapper .pagination button::after {
+   content: "";
+   display: block;
+   position: absolute;
+   top: 50%;
+   height: 2px;
+   width: 100%;
+   background: #fff;
+   transition: transform 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+ }
+ .wrapper .pagination button:before {
+   transform: rotate(45deg);
+   animation: chevronEnterFirst 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+ }
+ .wrapper .pagination button:after {
+   transform: rotate(-45deg);
+   animation: chevronEnterSecond 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+ }
+ .wrapper .pagination button.previous::before, .wrapper .pagination button.previous::after {
+   left: 20%;
+   transform-origin: 0% 50%;
+ }
+ .wrapper .pagination button.next::before, .wrapper .pagination button.next::after {
+   right: 20%;
+   transform-origin: 100% 50%;
+ }
+
+

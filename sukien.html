@@ -5,15 +5,13 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Cẩm nang du lịch</title>
+   <title>Sự kiện</title>
    <link rel="shortcut icon" href="./assets/images/logo_tach_nen.png" type="image/x-icon" />
    <link rel="stylesheet" href="./assets/dist/css/mdb.min.css">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
    <link rel="stylesheet" href="./assets/css/navbar.css">
    <link rel="stylesheet" href="./assets/css/reload.css">
-   <link rel="stylesheet" href="./assets/css/camnang.css">
-
-
+   <link rel="stylesheet" href="./assets/css/sukien.css">
 </head>
 
 <body>
@@ -21,10 +19,31 @@
    </div>
    <div id="navbar"></div>
    <div class="container">
-      <h1 class="d-flex justify-content-center">Địa điểm nổi tiếng</h1>
-      <div id="destination-list">
-        
-      </div>
+      <h1 class="d-flex justify-content-center">Sự kiện</h1>
+      <main>
+         <div id="events-list">
+         </div>
+         <nav class="d-flex justify-content-center">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <div id="page-index" class = "d-flex">
+                
+              </div>
+            
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+         
+      </main>
+      
    </div>
    <div id="footer"></div>
 
@@ -43,12 +62,12 @@
          });
       }
    </script>
-   <script type="module" src="./assets/components/camnangdulich.js"></script>
+   <script type = "module" src="./assets/components/sukien.js"></script>
+   <script  type = "module " src="./assets/scripts/sukien.js"></script>
    <script type="module">
       const home = document.getElementById('img-home');
       home.src = './assets/images/grey_home.png';
    </script>
-
    <script src="./assets/dist/js/mdb.min.js"></script>
    <script src="./assets/js/jquery-3.6.3.js"></script>
    <script type="module" src="./assets/scripts/navbar.js"></script>
